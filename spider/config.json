@@ -1,0 +1,11 @@
+﻿[
+    {
+        "url": "https://news.cnblogs.com/",
+        "name": "博客园",
+        "selector1": "#entry_574228 > div.content > h2 > a",
+        "selector2": "#entry_574228 > div.content > div.entry_footer > span.view",
+        "selector3": "#entry_574228 > div.content > div.entry_footer > span.gray",
+        "selector4": "",
+        "selector5": ""
+    }
+]
