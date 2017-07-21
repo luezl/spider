@@ -24,6 +24,7 @@ namespace spider
             
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
             var db = new DbMapper();
@@ -34,16 +35,17 @@ namespace spider
             var json = JsonConvert.DeserializeObject<List<Config>>(config);
             var len = json.Count();
             log("开始获取数据！");
-            new AsynTask().RunTask(t =>
-            {
-                for (Int32 i = 0; i < len; i++)
-                {
-                    var it = json[i];
-                    var d = new edata();
-                    d.name = it.name;
-                    d.url = it.url;
 
-                    t.Post(() =>
+            for (Int32 i = 0; i < len; i++)
+            {
+                var it = json[i];
+                var d = new edata();
+                d.name = it.name;
+                d.url = it.url;
+
+                AsynTask.Task(() => {
+
+                    AsynTask.UpdateUI(() =>
                     {
                         log(d.name);
                         log(d.url);
@@ -53,56 +55,47 @@ namespace spider
                     if (!string.IsNullOrWhiteSpace(it.selector1))
                     {
                         d.value1 = dom.FindSingle(it.selector1).InnerText();
-
                     }
                     if (!string.IsNullOrWhiteSpace(it.selector2))
                     {
                         d.value2 = dom.FindSingle(it.selector2).InnerText();
-
                     }
                     if (!string.IsNullOrWhiteSpace(it.selector3))
                     {
                         d.value3 = dom.FindSingle(it.selector3).InnerText();
-
                     }
                     if (!string.IsNullOrWhiteSpace(it.selector4))
                     {
                         d.value4 = dom.FindSingle(it.selector4).InnerText();
-
                     }
                     if (!string.IsNullOrWhiteSpace(it.selector5))
                     {
-                        d.value5 = dom.FindSingle(it.selector5).InnerText();
-
+                        d.value5 = dom.FindSingle(it.selector5).InnerHtml();
                     }
 
                     //DB
                     db.insert(d);
 
-                    t.Post(() =>
+                    AsynTask.UpdateUI(() =>
                     {
                         this.progressBar1.Value = i / len * 100;
                     });
-                }
-
-            }, () =>
-            {
-                log("处理完毕！");
-            }, ex => {
-                log("处理失败了！" + ex.Message);
-            });
-
+                })
+               .OnSuccess(() =>
+               {
+                   log("处理完毕！");
+               })
+               .OnError(ex =>
+               {
+                   log("处理失败了！" + ex.Message);
+               })
+               .Start();
+                
+            }                     
            
         }
 
-        public void updateUI(Action<object> action, object param=null)
-        {
-            var context = SynchronizationContext.Current;
-            if (context != null) 
-            {
-                context.Post(o => { action(o); }, param);
-            }       
-        }
+        
 
         public void log(string msg)
         {

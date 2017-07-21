@@ -1,10 +1,109 @@
 ﻿[
     {
-        "url": "https://news.cnblogs.com/",
+        "url": "https://www.cnblogs.com/",
         "name": "博客园",
-        "selector1": "#entry_574228 > div.content > h2 > a",
-        "selector2": "#entry_574228 > div.content > div.entry_footer > span.view",
-        "selector3": "#entry_574228 > div.content > div.entry_footer > span.gray",
+        "selector1": "#post_list > div:nth-child(1) > div.post_item_body > h3 > a",
+        "selector2": "#post_list > div:nth-child(1) > div.post_item_body > p",
+        "selector3": "#post_list > div:nth-child(1) > div.post_item_body > div > a",
+        "selector4": "",
+        "selector5": ""
+    },
+	{
+        "url": "https://www.cnblogs.com/",
+        "name": "博客园",
+        "selector1": "#post_list > div:nth-child(1) > div.post_item_body > h3 > a",
+        "selector2": "#post_list > div:nth-child(1) > div.post_item_body > p",
+        "selector3": "#post_list > div:nth-child(1) > div.post_item_body > div > a",
+        "selector4": "",
+        "selector5": ""
+    },
+	{
+        "url": "https://www.cnblogs.com/",
+        "name": "博客园",
+        "selector1": "#post_list > div:nth-child(1) > div.post_item_body > h3 > a",
+        "selector2": "#post_list > div:nth-child(1) > div.post_item_body > p",
+        "selector3": "#post_list > div:nth-child(1) > div.post_item_body > div > a",
+        "selector4": "",
+        "selector5": ""
+    },
+	{
+        "url": "https://www.cnblogs.com/",
+        "name": "博客园",
+        "selector1": "#post_list > div:nth-child(1) > div.post_item_body > h3 > a",
+        "selector2": "#post_list > div:nth-child(1) > div.post_item_body > p",
+        "selector3": "#post_list > div:nth-child(1) > div.post_item_body > div > a",
+        "selector4": "",
+        "selector5": ""
+    },
+	{
+        "url": "https://www.cnblogs.com/",
+        "name": "博客园",
+        "selector1": "#post_list > div:nth-child(1) > div.post_item_body > h3 > a",
+        "selector2": "#post_list > div:nth-child(1) > div.post_item_body > p",
+        "selector3": "#post_list > div:nth-child(1) > div.post_item_body > div > a",
+        "selector4": "",
+        "selector5": ""
+    },
+	{
+        "url": "https://www.cnblogs.com/",
+        "name": "博客园",
+        "selector1": "#post_list > div:nth-child(1) > div.post_item_body > h3 > a",
+        "selector2": "#post_list > div:nth-child(1) > div.post_item_body > p",
+        "selector3": "#post_list > div:nth-child(1) > div.post_item_body > div > a",
+        "selector4": "",
+        "selector5": ""
+    },
+	{
+        "url": "https://www.cnblogs.com/",
+        "name": "博客园",
+        "selector1": "#post_list > div:nth-child(1) > div.post_item_body > h3 > a",
+        "selector2": "#post_list > div:nth-child(1) > div.post_item_body > p",
+        "selector3": "#post_list > div:nth-child(1) > div.post_item_body > div > a",
+        "selector4": "",
+        "selector5": ""
+    },
+	{
+        "url": "https://www.cnblogs.com/",
+        "name": "博客园",
+        "selector1": "#post_list > div:nth-child(1) > div.post_item_body > h3 > a",
+        "selector2": "#post_list > div:nth-child(1) > div.post_item_body > p",
+        "selector3": "#post_list > div:nth-child(1) > div.post_item_body > div > a",
+        "selector4": "",
+        "selector5": ""
+    },
+	{
+        "url": "https://www.cnblogs.com/",
+        "name": "博客园",
+        "selector1": "#post_list > div:nth-child(1) > div.post_item_body > h3 > a",
+        "selector2": "#post_list > div:nth-child(1) > div.post_item_body > p",
+        "selector3": "#post_list > div:nth-child(1) > div.post_item_body > div > a",
+        "selector4": "",
+        "selector5": ""
+    },
+	{
+        "url": "https://www.cnblogs.com/",
+        "name": "博客园",
+        "selector1": "#post_list > div:nth-child(1) > div.post_item_body > h3 > a",
+        "selector2": "#post_list > div:nth-child(1) > div.post_item_body > p",
+        "selector3": "#post_list > div:nth-child(1) > div.post_item_body > div > a",
+        "selector4": "",
+        "selector5": ""
+    },
+	{
+        "url": "https://www.cnblogs.com/",
+        "name": "博客园",
+        "selector1": "#post_list > div:nth-child(1) > div.post_item_body > h3 > a",
+        "selector2": "#post_list > div:nth-child(1) > div.post_item_body > p",
+        "selector3": "#post_list > div:nth-child(1) > div.post_item_body > div > a",
+        "selector4": "",
+        "selector5": ""
+    },
+	{
+        "url": "https://www.cnblogs.com/",
+        "name": "博客园",
+        "selector1": "#post_list > div:nth-child(1) > div.post_item_body > h3 > a",
+        "selector2": "#post_list > div:nth-child(1) > div.post_item_body > p",
+        "selector3": "#post_list > div:nth-child(1) > div.post_item_body > div > a",
         "selector4": "",
         "selector5": ""
     }
